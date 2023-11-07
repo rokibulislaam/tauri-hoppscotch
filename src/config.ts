@@ -29,6 +29,8 @@ function _tryParseJson5Config(contents: string): TauriConfig | null {
   }
 }
 
+console.log("hey")
+
 function _tryParseTomlConfig(contents: string): TauriConfig | null {
   try {
     const config = parseToml(contents) as TauriConfig;
